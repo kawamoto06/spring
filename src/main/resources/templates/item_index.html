@@ -17,99 +17,123 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@700&family=Noto+Sans+JP:wght@400;900&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
-
  </head>
- 
+
  <body>
  <!----- ヘッダー ----->
  <div th:replace="/common::header1"></div>
- <!----- ヘッダー END ----->
- 
- <!----- メインコンテンツ ----->
- <main class="main">
-    <div class="main_photo_box">
-        <ul class="slick01">
-            <li><img alt="画像1" th:src="@{images/mainimage01.png}" /></li>
-            <li><img alt="画像2" th:src="@{images/mainimage01.png}" /></li>
-            <li><img alt="画像3" th:src="@{images/mainimage01.png}" /></li>
-          </ul>
-    </div>
-    <div class="main2">
-        <section class="main2_text_box">
-            <h2 class="main2_text">New Arrival</h2>
-            <div class="main2_sub_text_box">
-                <div class="main2_sub_text_left">+255</div>
-                <div class="main2_sub_text_right">items</div>
-            </div>
-            <div class="main2_sub_text">
-                <p>リクエストの多かった化粧品を取り扱い始めました。</br>
-                この秋注目のマッド系商品はマストアイテム。是非チェックしてみてください。</p>
-            </div>
-            <div class="main2_button">
-                <a href="item_index.html">
-                    <button>more</button>
-                </a>
-            </div>
+  <!----- ヘッダー END ----->
+ <main class="index_main">
+    <div class="main_title">
+        <section>
+            <h2>
+                Item List
+            </h2>
         </section>
-        <div class="main2_photo_box">
-            <div class="main2_photo_1">
-                <img th:src="@{images/photo01.png}">
-                <div class="main2_photo_2">
-                    <img th:src="@{images/photo02.png}">
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="main3">
-        <div class="main3_content">
-            <div class="main3_photo_box">
-                <div class="main3_container">
-                    <img th:src="@{images/photo03.png}" class="sample-img">
-                </div> 
-                <div>
-                    <p class="main3_text_color">
-                        <span>
-                            Time limit Sale
-                        </span>
-                    </p>
-                    <p class="main3_text">
-                        <span>
-                            Time limit Sale
-                        </span>
-                    </p>
-                    <div class="main3_sub_text_box">
-                        <div class="main3_sub_text_left">
-                            10/12 20:00
-                        </div>
-                        <div class="main3_sub_text_right">
-                            Start
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main3_sub_text_under_box">
-                <div class="main3_sub_text_under">
-                    <p>年に1度の期間限定セール実施！<br>
-                    最大90%OFFのビッグセール！！</p>
-                </div>
-                <div class="main3_button">
-                    <a href="item_index.html">
-                        <button>more</button>
-                    </a>
-                </div>
-            </div>
+    <div class="main_contet">
+        <ui class="cotent_category">
+            <li >
+                <a href="#" id="black">#ALLITEM</a>
+            </li>
+            <li>
+                <a href="#">#リング</a>
+            </li>
+            <li>
+                <a href="#">ブレスレット</a>
+            </li>
+            <li>
+                <a href="#">#ピアス</a>
+            </li>
+            <li>
+                <a href="#">#イヤリング</a>
+            </li>
+        </ui>
     </div>
-    </div>
-    <section>
-    <h2 class="main4">
-        Pick Up Item
-    </h2>
-    </section>
     <div class="main5">
+        
         <div class="main5_box">
             <div class="item_box">
                 <div class="item_photo">
                     <a href="show.html">
+                        <img th:src="@{images/item.png}">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="yellow">
+                    なんとかリング</a>
+                </div>
+                <div class="item_text">
+                    <div>
+                        <a href="#" class="black">1500,</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black">yen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="item_photo">
+                    <a href="show.html">
+                        <img th:src="@{images/item.png}">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="yellow">
+                    なんとかリング</a>
+                </div>
+                <div class="item_text">
+                    <div>
+                        <a href="#" class="black">1500,</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black">yen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="item_photo">
+                    <a href="show.html">
+                        <img th:src="@{images/item.png}">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="yellow">
+                    なんとかリング</a>
+                </div>
+                <div class="item_text">
+                    <div>
+                        <a href="#" class="black">1500,</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black">yen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_box">
+                <div class="item_photo">
+                    <a href="show.html">
+                        <img th:src="@{images/item.png}">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="yellow">
+                    なんとかリング</a>
+                </div>
+                <div class="item_text">
+                    <div>
+                        <a href="#" class="black">1500,</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black">yen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main5_box">
+            <div class="item_box">
+                <div class="item_photo">
+                    <a th:href="@{show}">
                         <img th:src="@{images/item.png}">
                     </a>
                 </div>
@@ -263,14 +287,40 @@
             </div>
         </div>
     </div>
-</main>
- <!----- メインコンテンツ END ----->
-
+    <ul class="Pagination">
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/1/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                </svg>
+            </a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link isActive" href="#"><span>1</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="#"><span>2</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="#"><span>3</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="#"><span>4</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="#"><span>5</span></a>
+        </li>
+        <li class="Pagination-Item">
+            <a class="Pagination-Item-Link" href="/pages/5/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="Pagination-Item-Link-Icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                </svg>
+            </a>
+        </li>
+    </ul>
+ </main>
  <!----- フッター ----->
  <div th:replace="/common::footer1"></div>
  <!----- フッター END ----->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script th:src="@{/js/slick.min.js}"></script>
- <script th:src="@{/js/main.js}"></script>
  </body>
-</html>
+ </html>

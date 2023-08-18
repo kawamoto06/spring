@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+ <header class="header" th:fragment="header1">
+    <div class="title_box">
+        <div class="title" >
+            <a th:href="@{/}">
+                <img th:src="@{/images/ShopName.png}" >
+            </a>
+        </div>
+    </div>
+    <div class="search_box">
+        <div class="search">
+            <input type="search" placeholder="Search..." class="search_form">
+            <input type="image" name="submit" th:src="@{/images/icon-search.png}">
+        </div>
+    </div>
+    <nav>
+        <ul class="header_nav_box">
+            <li>
+                <a class="item_list" th:href="@{/item_index}">
+                    商品一覧
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img th:src="@{images/icon-heart.png}">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   <img th:src="@{images/icon-person.png}">
+                </a>
+            </li>
+            <li>
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+                <div class="menu">
+                    <div class="menu_box">
+                        <div class="menu_left">
+                            <section>
+                                <h2>CATEGORY</h2>
+                                <div class="category_box">
+                                    <div class="category_wear">
+                                        <p>洋服</p>
+                                        <ul>
+                                            <li>―<span>シャツ</span></li>
+                                            <li>—<span>トレーナー</span></li>
+                                            <li>—<span>ブラウス</span></li>
+                                            <li>—<span>スカート</span></li>
+                                            <li>—<span>パンツ</span></li>
+                                            <li>—<span>ワンピース</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category_accessory">
+                                        <p>アクセサリー＆バッグ</p>
+                                        <ul>
+                                            <li>—<span>リング</span></li>
+                                            <li>—<span>ピアス</span></li>
+                                            <li>—<span>イヤリング</span></li>
+                                            <li>—<span>ネックレス</span></li>
+                                            <li>—<span>時計</span></li>
+                                            <li>—<span>ショルダーバッグ</span></li>
+                                            <li>—<span>リュック</span></li>
+                                            <li>—<span>スポーツバッグ</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category_beauty">
+                                        <p>ビューティー</p>
+                                        <ul>
+                                            <li>—<span>化粧品</span></li>
+                                            <li>—<span>日焼け止め</span></li>
+                                            <li>—<span>スポーツグッズ</span></li>
+                                            <li>—<span>サプリメント</span></li>
+                                            <li>—<span>化粧用品</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="menu_right">
+                            <section>
+                                <h2>SALE</h2>
+                                <div class="sale_box">
+                                    <div class="sale_img_1">
+                                        <img th:src="@{images/banner.png}">
+                                    </div>
+                                    <div class="sale_img_2">
+                                        <img th:src="@{images/banner.png}">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+ </header>
+
+ <footer class="footer" th:fragment="footer1">
+    <div class="footer_photo_box"> 
+        <a href="#">
+            <img th:src="@{images/ShopName.png}">
+        </a>
+    </div>
+    <nav>
+        <ul class="footer_nav_box">
+            <li class="footer_nav_text_1">
+                <a href="#">特定商取引法に基づく表記</a>
+            </li>
+            <li class="footer_nav_text_2">
+                <a href="#">プライバシーポリシー</a>
+            </li>
+            <li class="footer_nav_text_3">
+                <a href="#">運営会社</a>
+            </li>
+        </ul>
+    </nav>
+ </footer>

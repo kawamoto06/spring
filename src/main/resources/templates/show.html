@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+ <head>
+ <meta charset="utf-8">
+ <title>demo ECサイト</title>
+ <meta name="robots" content="noindex">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script th:src="@{/js/jquery-1.12.4.min.js}"></script>
+ <script th:src="@{/js/slick/slick.min.js}"></script>
+ <link rel="stylesheet" th:href="@{/css/slick.css}">
+ <link rel="stylesheet" th:href="@{/css/slick-theme.css}">
+ <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+ <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+ <link rel="icon" href="img/favicon.ico">
+ <script src="sample.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@700&family=Noto+Sans+JP:wght@400;900&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+ <!----- ヘッダー ----->
+ <div th:replace="/common::header1"></div>
+ <!----- ヘッダー END ----->
+ <main class="show_main">
+    <div class="show_box">
+        <div class="show_sub_box">
+            <div><img th:src="@{images/item.png}" class="show_img"></div>
+            <div class="show_text_box">
+                <div>
+                    <a href="#" class="yellow">
+                    なんとかリング</a>
+                </div>
+                <div class="item_text">
+                    <div>
+                        <a href="#" class="black">1500,</a>
+                    </div>
+                    <div>
+                        <a href="#" class="black">yen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </main>
+ <!----- フッター ----->
+ <div th:replace="/common::footer1"></div>
+ <!----- フッター END ----->
+ </body>
+</html>
