@@ -653,21 +653,21 @@ background-image:repeating-linear-gradient(160deg, transparent, transparent 782p
 
 
   .menu_left p{
-    font-size: 5px;
+    font-size: 15px;
   }
 
 
   .category_wear{
     margin-right: 13px;
-    font-size: 1px;
+    font-size: 10px;
   }
 
   .category_accessory{
     margin-right: 13px;
-    font-size: 1px;
+    font-size: 10px;
   }
   .category_beauty{
-    font-size: 1px;
+    font-size: 10px;
   }
 
   .sale_box div{
