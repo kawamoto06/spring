@@ -1,4 +1,4 @@
-FROM maven:4.0.0-jdk-20 AS build
+FROM maven:3-jdk-20 AS build
 COPY . .
 RUN mvn clean package -Dmaven.test.skip=true
 FROM openjdk:20-jdk-slim
