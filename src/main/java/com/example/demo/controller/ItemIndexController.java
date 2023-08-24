@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ItemIndexController {
 
-    @RequestMapping(value = "/item_index", method = RequestMethod.GET)
+    @RequestMapping(value = "/itemindex", method = RequestMethod.GET)
     public String itemIndex() {
-        return "item_index";
+        return "itemindex";
     }
 }
